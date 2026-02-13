@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #000000, #0f0c29, #1a1443);
+    color: white;
+  }
+  
+  .container {
+    padding: 40px;
+  }
+  
+  h1 {
+    color: #a855f7;
+  }
+  
+  .highlight {
+    color: #38bdf8;
+  }
+  
+  .card {
+    background: rgba(255,255,255,0.05);
+    padding: 25px;
+    border-radius: 15px;
+    margin: 20px 0;
+  }
+  
+  button {
+    background: linear-gradient(90deg,#a855f7,#38bdf8);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  footer {
+    margin-top: 60px;
+    text-align: center;
+    opacity: 0.6;
+  }
+  
