@@ -1,41 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #000000, #0f0c29, #1a1443);
-    color: white;
-  }
-  
-  .container {
-    padding: 40px;
-  }
-  
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #000000, #0f0c29, #1a1443);
+  color: white;
+}
+
+.container {
+  padding: 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.nav-links a {
+  color: #38bdf8;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+}
+
+h1 {
+  color: #a855f7;
+  font-size: 28px;
+}
+
+.highlight {
+  color: #38bdf8;
+}
+
+/* CARD */
+.card {
+  background: rgba(255,255,255,0.05);
+  padding: 25px;
+  border-radius: 15px;
+  margin: 20px 0;
+  backdrop-filter: blur(10px);
+}
+
+button {
+  width: 100%;
+  background: linear-gradient(90deg,#a855f7,#38bdf8);
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+input, select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 15px;
+}
+
+footer {
+  margin-top: 60px;
+  text-align: center;
+  opacity: 0.6;
+  font-size: 14px;
+}
+
+/* DESKTOP GRID */
+.packages {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* MOBILE */
+@media(max-width:768px) {
+
   h1 {
-    color: #a855f7;
+    font-size: 22px;
   }
-  
-  .highlight {
-    color: #38bdf8;
+
+  .packages {
+    grid-template-columns: 1fr;
   }
-  
-  .card {
-    background: rgba(255,255,255,0.05);
-    padding: 25px;
-    border-radius: 15px;
-    margin: 20px 0;
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
   }
-  
-  button {
-    background: linear-gradient(90deg,#a855f7,#38bdf8);
-    border: none;
-    padding: 12px 20px;
-    border-radius: 8px;
-    color: white;
-    cursor: pointer;
+
+  .nav-links {
+    margin-top: 10px;
   }
-  
-  footer {
-    margin-top: 60px;
-    text-align: center;
-    opacity: 0.6;
+
+  .nav-links a {
+    display: block;
+    margin: 5px 0;
   }
-  
+
+}
